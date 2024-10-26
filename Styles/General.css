@@ -1,0 +1,88 @@
+/*NavBar*/
+nav {
+    height: 60px;
+}
+
+nav .d-flex {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile a {
+    text-decoration: none;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*SideBar*/
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #ece7aa;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-top: 140px;
+}
+
+.sidebar div {
+    margin-top: 250px;
+}
+
+.sidebar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*Contenido*/
+
+.container {
+    margin-top: 70px;
+    margin-right: 175px;
+    text-align: justify;
+}
+
+/*Footer*/
+footer {
+    margin-left: 250px;
+}
+
+footer img {
+    filter: invert(100%);
+    height: 250px;
+}
+
+footer h5 {
+    color: white;
+}
+
+footer p {
+    color: white;
+}
