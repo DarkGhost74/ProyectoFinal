@@ -1,0 +1,125 @@
+.contenedor {
+    text-align: justify;
+}
+
+.divBtn {
+    text-align: center;
+    width: 250px;
+    margin-left: calc((100% - 250px) / 2);
+}
+
+.btn-lg {
+    background-color: #ece7aa;
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+    border: 2px solid black;
+}
+
+#estrella {
+    background-color: transparent;
+    border: none;
+    color: #ffd700;
+    font-size: 45px;
+    cursor: pointer;
+    padding: 10px 10px;
+    position: absolute;
+    top: 70px;
+}
+
+/* xm */
+@media (max-width: 575px) {
+    .libro {
+        width: 300px;
+        border-radius: 15px;
+        margin-left: calc((100% - 300px) / 2);
+    }
+    .contenido {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    #estrella {
+        right: 0px;
+    }
+}
+
+/* sm */
+@media (min-width: 576px) {
+    .elementos {
+        display: flex;
+    }
+    .libro {
+        width: 200px;
+        border-radius: 15px;
+    }
+    .contenido {
+        padding-left: 15px;
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    #estrella {
+        right: calc(((100% - 576px) / 2) + 20px);
+    }
+}
+
+/* md */
+@media (min-width: 768px) and (max-width: 1209px) {
+    .libro {
+        width: 250px;
+        border-radius: 15px;
+    }
+    .contenido {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    #estrella {
+        right: calc(((100% - 768px) / 2) + 20px);
+    }
+}
+
+/* lg */
+@media (min-width: 992px) {
+    h2 {
+        font-size: 30px;
+    }
+    #estrella {
+        right: calc(((100% - 992px) / 2) + 10px);
+    }
+}
+
+/* xl */
+@media (min-width: 1210px) {
+    .libro {
+        width: 350px;
+        border-radius: 15px;
+    }
+    .contenido {
+        padding-left: 30px;
+        font-size: 30px;
+    }
+    #estrella {
+        right: calc(((100% - 1210px) / 2) + 10px);
+    }
+}
+
+/* xxl */
+@media (min-width: 1390px) {
+    #estrella {
+        right: calc(((100% - 1390px) / 2) + 10px);
+    }
+}
+
+/* xxxl */
+@media (min-width: 1570px) {
+    #estrella {
+        right: calc(((100% - 1570px) / 2) + 10px);
+    }
+}
