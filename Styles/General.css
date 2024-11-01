@@ -83,16 +83,20 @@ nav .navbar-brand {
     .sidebar {
         display: none;
     }
+
     .tabla {
         grid-template-columns: 1fr 1fr;
     }
+
     .card {
         width: calc((100%/2)-5px);
     }
+
     .contenedor {
         width: 100%;
         padding: 20px;
     }
+
     footer {
         margin-left: 0px;
     }
@@ -103,12 +107,15 @@ nav .navbar-brand {
     .sidebar {
         display: none;
     }
+
     .tabla {
         grid-template-columns: 1fr 1fr;
     }
+
     .card {
         width: 250px;
     }
+
     .contenedor {
         width: 540px;
         margin-left: calc((100% - 540px) / 2);
@@ -120,9 +127,11 @@ nav .navbar-brand {
     .tabla {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .card {
         width: 220px;
     }
+
     .contenedor {
         width: 720px;
         margin-left: calc((100% - 720px) / 2);
@@ -134,21 +143,26 @@ nav .navbar-brand {
     nav {
         height: 60px;
     }
+
     nav .d-flex {
         position: absolute;
         width: 50%;
         margin-left: calc((25% - 1rem) + 125px);
     }
+
     nav .colapsado {
         display: none;
     }
+
     .sidebar {
         display: block;
     }
+
     .contenedor {
         width: 720px;
         margin-left: calc(((100% - 970px) / 2) + 250px);
     }
+
     footer {
         margin-left: 250px;
     }
@@ -159,6 +173,7 @@ nav .navbar-brand {
     .tabla {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
     .contenedor {
         width: 960px;
         margin-left: calc(((100% - 1210px) / 2) + 250px);
@@ -170,6 +185,7 @@ nav .navbar-brand {
     .card {
         width: 240px;
     }
+
     .contenedor {
         width: 1140px;
         margin-left: calc(((100% - 1390px) / 2) + 250px);
@@ -181,6 +197,7 @@ nav .navbar-brand {
     .tabla {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
+
     .contenedor {
         width: 1320px;
         margin-left: calc(((100% - 1570px) / 2) + 250px);

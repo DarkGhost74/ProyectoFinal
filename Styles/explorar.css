@@ -1,20 +1,19 @@
-@media (min-width: 768px) {
-    .carousel-inner {
-        display: flex;
-    }
-    .carousel-item {
-        margin-right: 0;
-        flex: 0 0 16.66666666%;
-        display: block;
-    }
+.carousel-inner {
+    display: flex;
 }
 
-.carousel-inner{
+.carousel-item {
+    margin-right: 0;
+    flex: 0 0 16.66666666%;
+    display: block;
+}
+
+.carousel-inner {
     padding: 1em;
 }
 
-.carousel-control-prev, .carousel-control-next{
-    background-color: transparent;
+.carousel-control-prev,
+.carousel-control-next {
     width: 6vh;
     height: 6vh;
     border-radius: 50%;
@@ -26,6 +25,17 @@
     width: 200px;
     border: none;
     font-size: 20px;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: black;
+    background-color: #ece7aa;
+}
+
+.generoxs{
+    width: calc((100vw / 2) - 50px);
+    border: none;
+    font-size: 15px;
     font-family: "Lexend Deca", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
