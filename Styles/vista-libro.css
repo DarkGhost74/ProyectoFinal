@@ -42,7 +42,8 @@
         font-size: 25px;
     }
     #estrella {
-        right: 0px;
+        right: calc((100% - 300px) / 2);
+        top: 80px;
     }
 }
 

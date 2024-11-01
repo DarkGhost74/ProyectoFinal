@@ -1,3 +1,8 @@
+body {
+    font-family: "Gilda Display", serif;
+    font-style: normal;
+}
+
 /*NavBar*/
 .profile-img {
     width: 40px;
@@ -16,8 +21,6 @@ nav .navbar-brand {
     position: absolute;
     top: 0.5rem;
     margin-left: calc(((100% - 250px) - 2rem) / 2);
-    font-family: "Gilda Display", serif;
-    font-style: normal;
 }
 
 /*SideBar*/
@@ -142,12 +145,6 @@ nav .navbar-brand {
     .sidebar {
         display: block;
     }
-    .tabla {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .card {
-        width: 220px;
-    }
     .contenedor {
         width: 720px;
         margin-left: calc(((100% - 970px) / 2) + 250px);
@@ -162,9 +159,6 @@ nav .navbar-brand {
     .tabla {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    .card {
-        width: 220px;
-    }
     .contenedor {
         width: 960px;
         margin-left: calc(((100% - 1210px) / 2) + 250px);
@@ -173,9 +167,6 @@ nav .navbar-brand {
 
 /* xxl */
 @media (min-width: 1390px) {
-    .tabla {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
     .card {
         width: 240px;
     }
@@ -189,9 +180,6 @@ nav .navbar-brand {
 @media (min-width: 1570px) {
     .tabla {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-    .card {
-        width: 240px;
     }
     .contenedor {
         width: 1320px;
