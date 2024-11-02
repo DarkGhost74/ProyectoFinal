@@ -42,3 +42,8 @@
     color: black;
     background-color: #ece7aa;
 }
+
+.generoselect {
+    background-image: linear-gradient(150deg, #09f, #ece7aa, #00ddff);
+    color: white;
+}

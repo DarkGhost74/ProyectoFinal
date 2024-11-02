@@ -22,45 +22,179 @@ $(document).ready(function () {
   }
   $(window).on("resize", ajustarBotones);
   ajustarBotones();
+  actualizarContenido("1");
 
-  document.querySelectorAll('.genero').forEach(button => {
+  document.querySelectorAll('.btn-lg').forEach(button => {
     button.addEventListener('click', (event) => {
-      const generoSeleccionado = event.target.textContent.trim();
-      const contenidoGenero = document.getElementById('contenidoGenero');
-
-      // Cambia el contenido según el género seleccionado
-      switch (generoSeleccionado) {
-        case 'Literatura infantil':
-          contenidoGenero.innerHTML = '<p>Contenido para Literatura infantil.</p>';
-          break;
-        case 'Fantasía':
-          contenidoGenero.innerHTML = '<p>Contenido para Fantasía.</p>';
-          break;
-        case 'Autobiografía':
-          contenidoGenero.innerHTML = '<p>Contenido para Autobiografía.</p>';
-          break;
-        case 'Científico':
-          contenidoGenero.innerHTML = '<p>Contenido para Científico.</p>';
-          break;
-        case 'Cuentos':
-          contenidoGenero.innerHTML = '<p>Contenido para Cuentos.</p>';
-          break;
-        case 'Poesía':
-          contenidoGenero.innerHTML = '<p>Contenido para Poesía.</p>';
-          break;
-        case 'Fantasía y aventura':
-          contenidoGenero.innerHTML = '<p>Contenido para Fantasía y aventura.</p>';
-          break;
-        case 'Fin':
-          contenidoGenero.innerHTML = '<p>Contenido para el Fin.</p>';
-          break;
-        default:
-          contenidoGenero.innerHTML = '<p>Contenido no disponible.</p>';
-          break;
-      }
+      const generoId = event.target.id;
+      actualizarContenido(generoId);
+      document.querySelectorAll('.btn-lg').forEach(btn => {
+        btn.classList.remove('generoselect');
+      });
+      event.target.classList.add('generoselect');
     });
   });
 });
+
+function actualizarContenido(generoId) {
+  const contenidoGenero = document.getElementById('contenidoGenero');
+  $("#contenidoGenero").empty();
+  switch (generoId) {
+    case "1":
+      for (let i = 0; i < 10; i++) {
+        let libro = `
+              <div class="card">
+                  <a href="Pantallas/vista-libro.html" class="card-link">
+                      <img src="../Imagenes/Prueba/Ana de las tejas verdes.png" class="card-img-top libro" alt="...">
+                  </a>
+                  <div class="card-body">
+                      <h5 class="card-title">Genero 1</h5>
+                  </div>
+              </div>
+            `;
+        $("#contenidoGenero").append(libro)
+      }
+      break;
+    case "2":
+      for (let i = 0; i < 10; i++) {
+        let libro = `
+              <div class="card">
+                  <a href="Pantallas/vista-libro.html" class="card-link">
+                      <img src="../Imagenes/Prueba/Batman Demned.png" class="card-img-top libro" alt="...">
+                  </a>
+                  <div class="card-body">
+                      <h5 class="card-title">Genero 2</h5>
+                  </div>
+              </div>
+            `;
+        $("#contenidoGenero").append(libro)
+      }
+      break;
+    case "3":
+      for (let i = 0; i < 10; i++) {
+        let libro = `
+              <div class="card">
+                  <a href="Pantallas/vista-libro.html" class="card-link">
+                      <img src="../Imagenes/Prueba/El diario de Ana Frank.png" class="card-img-top libro" alt="...">
+                  </a>
+                  <div class="card-body">
+                      <h5 class="card-title">Genero 3</h5>
+                  </div>
+              </div>
+            `;
+        $("#contenidoGenero").append(libro)
+      }
+      break;
+    case "4":
+      for (let i = 0; i < 10; i++) {
+        let libro = `
+              <div class="card">
+                  <a href="Pantallas/vista-libro.html" class="card-link">
+                      <img src="../Imagenes/Prueba/El libro de Bill.png" class="card-img-top libro" alt="...">
+                  </a>
+                  <div class="card-body">
+                      <h5 class="card-title">Genero 4</h5>
+                  </div>
+              </div>
+            `;
+        $("#contenidoGenero").append(libro)
+      }
+      break;
+    case "5":
+      for (let i = 0; i < 10; i++) {
+        let libro = `
+              <div class="card">
+                  <a href="Pantallas/vista-libro.html" class="card-link">
+                      <img src="../Imagenes/Prueba/El principito.png" class="card-img-top libro" alt="...">
+                  </a>
+                  <div class="card-body">
+                      <h5 class="card-title">Genero 5</h5>
+                  </div>
+              </div>
+            `;
+        $("#contenidoGenero").append(libro)
+      }
+      break;
+    case "6":
+      for (let i = 0; i < 10; i++) {
+        let libro = `
+              <div class="card">
+                  <a href="Pantallas/vista-libro.html" class="card-link">
+                      <img src="../Imagenes/Prueba/Harry Potter y la piedra filosofal.png" class="card-img-top libro" alt="...">
+                  </a>
+                  <div class="card-body">
+                      <h5 class="card-title">Genero 6</h5>
+                  </div>
+              </div>
+            `;
+        $("#contenidoGenero").append(libro)
+      }
+      break;
+    case "7":
+      for (let i = 0; i < 10; i++) {
+        let libro = `
+              <div class="card">
+                  <a href="Pantallas/vista-libro.html" class="card-link">
+                      <img src="../Imagenes/Prueba/It.png" class="card-img-top libro" alt="...">
+                  </a>
+                  <div class="card-body">
+                      <h5 class="card-title">Genero 7</h5>
+                  </div>
+              </div>
+            `;
+        $("#contenidoGenero").append(libro)
+      }
+      break;
+    case "8":
+      for (let i = 0; i < 10; i++) {
+        let libro = `
+              <div class="card">
+                  <a href="Pantallas/vista-libro.html" class="card-link">
+                      <img src="../Imagenes/Prueba/La niebla.png" class="card-img-top libro" alt="...">
+                  </a>
+                  <div class="card-body">
+                      <h5 class="card-title">Genero 8</h5>
+                  </div>
+              </div>
+            `;
+        $("#contenidoGenero").append(libro)
+      }
+      break;
+    case "9":
+      for (let i = 0; i < 10; i++) {
+        let libro = `
+              <div class="card">
+                  <a href="Pantallas/vista-libro.html" class="card-link">
+                      <img src="../Imagenes/Prueba/Los ojos de mona.png" class="card-img-top libro" alt="...">
+                  </a>
+                  <div class="card-body">
+                      <h5 class="card-title">Genero 9</h5>
+                  </div>
+              </div>
+            `;
+        $("#contenidoGenero").append(libro)
+      }
+      break;
+    case "10":
+      for (let i = 0; i < 10; i++) {
+        let libro = `
+              <div class="card">
+                  <a href="Pantallas/vista-libro.html" class="card-link">
+                      <img src="../Imagenes/Prueba/Lugares asombrosos.png" class="card-img-top libro" alt="...">
+                  </a>
+                  <div class="card-body">
+                      <h5 class="card-title">Genero 10</h5>
+                  </div>
+              </div>
+            `;
+        $("#contenidoGenero").append(libro)
+      }
+      break;
+    default:
+      contenidoGenero.innerHTML = '<p>Contenido no disponible.</p>';
+      break;
+  }
+}
 
 $(".carousel-control-next").on("click", function () {
   if (window.innerWidth >= 1570) {
@@ -93,7 +227,9 @@ $(".carousel-control-next").on("click", function () {
     let cardWidth1 = $(".carousel-item").width();
     if (scrollPosition < (carouselWidth - cardWidth1 * 3)) {
       scrollPosition += cardWidth1 * 2;
-      $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600);
+      if (scrollPosition < cardWidth1 * 10) {
+        $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600);
+      }
     }
   }
 });
