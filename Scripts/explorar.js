@@ -44,7 +44,7 @@ function actualizarContenido(generoId) {
       for (let i = 0; i < 10; i++) {
         let libro = `
               <div class="card">
-                  <a href="Pantallas/vista-libro.html" class="card-link">
+                  <a href="vista-libro.html" class="card-link">
                       <img src="../Imagenes/Prueba/Ana de las tejas verdes.png" class="card-img-top libro" alt="...">
                   </a>
                   <div class="card-body">
@@ -59,7 +59,7 @@ function actualizarContenido(generoId) {
       for (let i = 0; i < 10; i++) {
         let libro = `
               <div class="card">
-                  <a href="Pantallas/vista-libro.html" class="card-link">
+                  <a href="vista-libro.html" class="card-link">
                       <img src="../Imagenes/Prueba/Batman Demned.png" class="card-img-top libro" alt="...">
                   </a>
                   <div class="card-body">
@@ -74,7 +74,7 @@ function actualizarContenido(generoId) {
       for (let i = 0; i < 10; i++) {
         let libro = `
               <div class="card">
-                  <a href="Pantallas/vista-libro.html" class="card-link">
+                  <a href="vista-libro.html" class="card-link">
                       <img src="../Imagenes/Prueba/El diario de Ana Frank.png" class="card-img-top libro" alt="...">
                   </a>
                   <div class="card-body">
@@ -89,7 +89,7 @@ function actualizarContenido(generoId) {
       for (let i = 0; i < 10; i++) {
         let libro = `
               <div class="card">
-                  <a href="Pantallas/vista-libro.html" class="card-link">
+                  <a href="vista-libro.html" class="card-link">
                       <img src="../Imagenes/Prueba/El libro de Bill.png" class="card-img-top libro" alt="...">
                   </a>
                   <div class="card-body">
@@ -104,7 +104,7 @@ function actualizarContenido(generoId) {
       for (let i = 0; i < 10; i++) {
         let libro = `
               <div class="card">
-                  <a href="Pantallas/vista-libro.html" class="card-link">
+                  <a href="vista-libro.html" class="card-link">
                       <img src="../Imagenes/Prueba/El principito.png" class="card-img-top libro" alt="...">
                   </a>
                   <div class="card-body">
@@ -119,7 +119,7 @@ function actualizarContenido(generoId) {
       for (let i = 0; i < 10; i++) {
         let libro = `
               <div class="card">
-                  <a href="Pantallas/vista-libro.html" class="card-link">
+                  <a href="vista-libro.html" class="card-link">
                       <img src="../Imagenes/Prueba/Harry Potter y la piedra filosofal.png" class="card-img-top libro" alt="...">
                   </a>
                   <div class="card-body">
@@ -134,7 +134,7 @@ function actualizarContenido(generoId) {
       for (let i = 0; i < 10; i++) {
         let libro = `
               <div class="card">
-                  <a href="Pantallas/vista-libro.html" class="card-link">
+                  <a href="vista-libro.html" class="card-link">
                       <img src="../Imagenes/Prueba/It.png" class="card-img-top libro" alt="...">
                   </a>
                   <div class="card-body">
@@ -149,7 +149,7 @@ function actualizarContenido(generoId) {
       for (let i = 0; i < 10; i++) {
         let libro = `
               <div class="card">
-                  <a href="Pantallas/vista-libro.html" class="card-link">
+                  <a href="vista-libro.html" class="card-link">
                       <img src="../Imagenes/Prueba/La niebla.png" class="card-img-top libro" alt="...">
                   </a>
                   <div class="card-body">
@@ -164,7 +164,7 @@ function actualizarContenido(generoId) {
       for (let i = 0; i < 10; i++) {
         let libro = `
               <div class="card">
-                  <a href="Pantallas/vista-libro.html" class="card-link">
+                  <a href="vista-libro.html" class="card-link">
                       <img src="../Imagenes/Prueba/Los ojos de mona.png" class="card-img-top libro" alt="...">
                   </a>
                   <div class="card-body">
@@ -179,7 +179,7 @@ function actualizarContenido(generoId) {
       for (let i = 0; i < 10; i++) {
         let libro = `
               <div class="card">
-                  <a href="Pantallas/vista-libro.html" class="card-link">
+                  <a href="vista-libro.html" class="card-link">
                       <img src="../Imagenes/Prueba/Lugares asombrosos.png" class="card-img-top libro" alt="...">
                   </a>
                   <div class="card-body">
