@@ -37,7 +37,6 @@ $(document).ready(function () {
 });
 
 function actualizarContenido(generoId) {
-  const contenidoGenero = document.getElementById('contenidoGenero');
   $("#contenidoGenero").empty();
   switch (generoId) {
     case "1":
@@ -191,7 +190,7 @@ function actualizarContenido(generoId) {
       }
       break;
     default:
-      contenidoGenero.innerHTML = '<p>Contenido no disponible.</p>';
+      alert("Contenido no disponible")
       break;
   }
 }
