@@ -2,7 +2,7 @@
 .biblioteca-img {
     width: 100%;
     height: auto;
-    max-width: 250px; /* Tamaño máximo de la imagen */
-    border-radius: 8px; /* Bordes redondeados para mejorar la estética */
+    max-width: 250px; 
+    border-radius: 8px; 
     margin: 20px 0;
 }
