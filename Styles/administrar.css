@@ -1,0 +1,47 @@
+#contbtns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btns {
+    height: 60px;
+    border: none;
+    font-size: 30px;
+    color: black;
+    background-color: #ece7aa;
+}
+
+/* xm */
+@media (max-width: 575px) {
+    .btns {
+        width: 100%;
+        height: 70px;
+    }
+}
+
+/* sm */
+@media (min-width: 576px) {
+    .btns {
+        width: 100%;
+    }
+}
+
+/* md */
+@media (min-width: 768px) and (max-width: 991px) {
+    #contbtns {
+        width: 100%;
+        align-items: center;
+    }
+
+    .btns {
+        width: 540px;
+    }
+}
+
+/* xl */
+@media (min-width: 1210px) {
+    .btns {
+        width: 500px;
+    }
+}

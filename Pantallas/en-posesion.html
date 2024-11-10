@@ -54,6 +54,15 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="en-posesion.html"><i class="bi bi-journal-bookmark-fill"></i> En posesión</a>
                         </li>
+                        <li class="nav-item admin">
+                            <a class="nav-link" href="administrar.html"><i class="bi bi-pencil"></i> Administrar</a>
+                        </li>
+                        <li class="nav-item admin">
+                            <a class="nav-link" href=""><i class="bi bi-input-cursor"></i> Canjear código</a>
+                        </li>
+                        <li class="nav-item admin">
+                            <a class="nav-link" href=""><i class="bi bi-bar-chart"></i> Estadísticas</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -80,6 +89,44 @@
         </div>
     </nav>
 
+    <div id="principal">
+        <!-- Contenido -->
+        <div class="contenedor">
+            <h1>En posesión</h1>
+            <h2 class="mb-3">Libros que posees actualmente</h2>
+            <div id="libros" class="tabla">
+            </div>
+            <h2 class="mt-5 mb-3">Folios pendientes</h2>
+            <div id="folios" class="tabla">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark-subtle mt-5 pt-5" data-bs-theme="dark">
+            <div class="container-fluid">
+                <div class="container text-center">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <a class="navbar-brand" href="../index.html"></a>
+                            <img src="../Imagenes/Logo.png" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <h5>Contacto</h5>
+                            <p>Correo electrónico: <small class="text-body-secondary">contacto@bibliotecaelbuho.com</small>
+                            </p>
+                            <p>Telefono: <small class="text-body-secondary">8123456789</small></p>
+                        </div>
+                        <div class="col">
+                            <p>Página hecha con mucho esfuezo y dedicación, haciendo uso de todos los conocimientos que se
+                                han adquirido durante el semestre.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
     <!-- SideBar -->
     <div class="sidebar fixed-top">
         <img src="../Imagenes/Logo.png" alt="Logo" class="logo position-absolute top-0 start-50 translate-middle">
@@ -99,6 +146,15 @@
             <a href="en-posesion.html">
                 <h4><i class="bi bi-journal-bookmark-fill"></i> En posesión</h4>
             </a>
+            <a href="administrar.html" class="admin">
+                <h4><i class="bi bi-pencil"></i> Administrar</h4>
+            </a>
+            <a href="" class="admin">
+                <h4><i class="bi bi-input-cursor"></i> Canjear código</h4>
+            </a>
+            <a href="" class="admin">
+                <h4><i class="bi bi-bar-chart"></i> Estadísticas</h4>
+            </a>
         </div>
         <div class="position-absolute bottom-0 start-0 ms-3 mb-4">
             <a href="acerca.html">
@@ -113,42 +169,6 @@
         </div>
     </div>
 
-    <!-- Contenido -->
-    <div class="contenedor">
-        <h1>En posesión</h1>
-        <h2 class="mb-3">Libros que posees actualmente</h2>
-        <div id="libros" class="tabla">
-        </div>
-        <h2 class="mt-5 mb-3">Folios pendientes</h2>
-        <div id="folios" class="tabla">
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-dark-subtle mt-5 pt-5" data-bs-theme="dark">
-        <div class="container-fluid">
-            <div class="container text-center">
-                <div class="row align-items-start">
-                    <div class="col">
-                        <a class="navbar-brand" href="../index.html"></a>
-                        <img src="../Imagenes/Logo.png" alt="Logo">
-                        </a>
-                    </div>
-                    <div class="col">
-                        <h5>Contacto</h5>
-                        <p>Correo electrónico: <small class="text-body-secondary">contacto@bibliotecaelbuho.com</small>
-                        </p>
-                        <p>Telefono: <small class="text-body-secondary">8123456789</small></p>
-                    </div>
-                    <div class="col">
-                        <p>Página hecha con mucho esfuezo y dedicación, haciendo uso de todos los conocimientos que se
-                            han adquirido durante el semestre.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -156,6 +176,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- General -->
+    <script src="../Scripts/General.js"></script>
     <!-- Script personalizado -->
     <script src="../Scripts/en-posesion.js"></script>
 </body>

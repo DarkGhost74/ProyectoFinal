@@ -55,6 +55,12 @@ nav .navbar-brand {
 
 /*Contenido*/
 
+#principal {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
 .contenedor {
     margin-top: 70px;
     padding: 10px;
@@ -76,6 +82,11 @@ nav .navbar-brand {
 
 .border-0 .card-img-top {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* botones que no verá el lector */
+.admin {
+    display: none;
 }
 
 /* xm */
