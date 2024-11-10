@@ -5,6 +5,12 @@
 .btn-dark {
     color: black;
     background-color: #ece7aa;
+    border-radius: 10px;
+}
+
+.dropdown-item:active {
+    background-color: #ece7aa;
+    color: black;
 }
 
 #divBtn {
