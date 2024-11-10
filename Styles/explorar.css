@@ -65,12 +65,18 @@
     display: block;
 }
 
+@media (max-width: 575px) {
+    #carouselExample {
+        width: calc(100vw - 40px);
+    }
+}
+
 @media (max-width: 767px) {
     .borde {
         margin-left: calc(100% - 150px);
         width: 150px;
     }
-    
+
     .btnexpo {
         font-size: 15px;
     }
