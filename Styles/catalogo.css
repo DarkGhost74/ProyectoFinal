@@ -55,6 +55,7 @@
     }
 }
 
+/* sm */
 @media (min-width: 576px) and (max-width: 767px) {
     #botones2 {
         margin-left: 0px;
@@ -69,7 +70,7 @@
     }
 }
 
-/* sm */
+/* md */
 @media (min-width: 768px) and (max-width: 1209px) {
     #botones2 {
         margin-left: 0px;

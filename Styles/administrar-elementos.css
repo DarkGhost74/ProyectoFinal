@@ -1,0 +1,45 @@
+.libro {
+    height: 50px;
+}
+
+.btn-dark {
+    color: black;
+    background-color: #ece7aa;
+}
+
+#divBtn {
+    position: absolute;
+}
+
+/* xm */
+@media (max-width: 1210px) {
+    #divBtn {
+        margin-left: 0px;
+        top: 130px;
+    }
+    .table {
+        margin-top: 50px;
+    }
+}
+
+/* xl */
+@media (min-width: 1210px) {
+    #divBtn {
+        margin-right: calc((100% - 1210px) / 2);
+        right: 0px;
+    }
+}
+
+/* xxl */
+@media (min-width: 1390px) {
+    #divBtn {
+        margin-right: calc((100% - 1350px) / 2);
+    }
+}
+
+/* xxxl */
+@media (min-width: 1570px) {
+    #divBtn {
+        margin-right: calc((100% - 1570px) / 2);
+    }
+}
