@@ -1,0 +1,24 @@
+.contenido {
+    margin-top: 60px;
+}
+
+.formulario-prestamo {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.formulario-prestamo label {
+    font-weight: bold;
+}
+
+.formulario-prestamo .btn {
+    width: 48%;
+}
+
+h2 {
+    font-family: 'Gilda Display', serif;
+}
