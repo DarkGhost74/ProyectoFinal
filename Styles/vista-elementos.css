@@ -6,6 +6,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.libro {
+    border-radius: 15px;
+}
+
 #fileInput {
     display: none;
 }
@@ -37,14 +41,9 @@
 
 /* xm */
 @media (max-width: 575px) {
-    .libro {
+    .libro, .autor {
         width: 300px;
-        border-radius: 15px;
         margin-left: calc((100% - 300px) / 2);
-    }
-
-    .autor {
-        width: 300px;
     }
 
     .contenido {
@@ -68,12 +67,7 @@
         display: flex;
     }
 
-    .libro {
-        width: 200px;
-        border-radius: 15px;
-    }
-
-    .autor {
+    .libro, .autor {
         width: 200px;
     }
 
@@ -94,12 +88,7 @@
 
 /* md */
 @media (min-width: 768px) and (max-width: 1209px) {
-    .libro {
-        width: 250px;
-        border-radius: 15px;
-    }
-
-    .autor {
+    .libro, .autor {
         width: 250px;
     }
 
@@ -131,12 +120,7 @@
 
 /* xl */
 @media (min-width: 1210px) {
-    .libro {
-        width: 350px;
-        border-radius: 15px;
-    }
-
-    .autor {
+    .libro, .autor {
         width: 350px;
     }
 
