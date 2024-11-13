@@ -11,7 +11,7 @@ $(document).ready(function () {
                     <td><img src="../Imagenes/Prueba/Harry Potter y la piedra filosofal.png" alt="" class="libro"></td>
                     <td>11/Septiembre/2001</td>
                     <td><button type="button" class="btn btn-dark">Info</button></td>
-                    <td><button type="button" class="btn btn-dark">Editar</button></td>
+                    <td><a href="crear-editar-libro.html" type="button" class="btn btn-dark">Editar</a></td>
                     <td><button type="button" class="btn btn-dark">Eliminar</button></td>
                 </tr>
             `;
