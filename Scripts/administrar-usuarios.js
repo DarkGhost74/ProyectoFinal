@@ -21,10 +21,20 @@ $(document).ready(function () {
                             </ul>
                         </div>
                     </td>
-                    <td><button type="button" class="btn btn-dark">Info</button></td>
-                    <td><button type="button" class="btn btn-dark">Eliminar</button></td>
+                    <td><button type="button" class="btn btn-dark"><i class="bi bi-info-circle"></i> Info</button></td>
+                    <td><a type="button" class="btn btn-dark eliminar-btn" href="#" data-bs-toggle="modal" data-bs-target="#modalEliminar"><i class="bi bi-trash me-1"></i>Eliminar</a></td>
                 </tr>
             `;
         $("#contenido").append(objeto)
     }
+    let rowToDelete
+    $("#contenido").on("click", ".eliminar-btn", function () {
+        rowToDelete = $(this).closest("tr")
+    });
+    $("#footerEliminar .btn-danger").on("click", function () {
+        if (rowToDelete) {
+            rowToDelete.remove()
+            rowToDelete = null
+        }
+    })
 })

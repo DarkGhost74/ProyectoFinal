@@ -114,6 +114,24 @@
                 <tbody id="contenido">
                 </tbody>
             </table>
+            <!-- Modal Eliminar, es el mismo para autores, catalogo, generos, y usuarios. Solo cambia la palabra autor, genero, libro y usuario -->
+            <div class="modal fade" id="modalEliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar elemento</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ¿Estás seguro que quieres eliminar este autor?
+                        </div>
+                        <div class="modal-footer" id="footerEliminar">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Footer -->
