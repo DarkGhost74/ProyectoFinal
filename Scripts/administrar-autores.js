@@ -7,7 +7,7 @@ $(document).ready(function () {
                     <td><img src="../Imagenes/Prueba/Autores/Stephen King.jpg" alt="" class="autor"></td>
                     <td>${i + 13}</td>
                     <td><button type="button" class="btn btn-dark">Info</button></td>
-                    <td><button type="button" class="btn btn-dark">Editar</button></td>
+                    <td><a href="crear-editar-autor.html" type="button" class="btn btn-dark">Editar</a></td>
                     <td><button type="button" class="btn btn-dark">Eliminar</button></td>
                 </tr>
             `;
