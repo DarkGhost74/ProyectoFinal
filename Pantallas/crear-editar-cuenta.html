@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo</title>
+    <title>Crear cuenta</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,7 +14,8 @@
     <!-- NavBar, SideBar, COntenido, Footer -->
     <link rel="stylesheet" href="../Styles/General.css">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="../Styles/catalogo.css">
+    <link rel="stylesheet" href="../Styles/vista-elementos.css">
+    <link rel="stylesheet" href="../Styles/crear-editar-cuenta.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +49,7 @@
                             <a class="nav-link" href="explorar.html"><i class="bi bi-bookmarks"></i> Explorar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="catalogo.html"><i class="bi bi-book-fill"></i> Catálogo</a>
+                            <a class="nav-link" href="catalogo.html"><i class="bi bi-book"></i> Catálogo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="coleccion.html"><i class="bi bi-star"></i> Colección</a>
@@ -91,51 +92,71 @@
     </nav>
 
     <div id="principal">
-        <!-- Contenido -->
-        <div class="contenedor">
-            <div id="botones2" class="botones">
-                <div class="borde me-3">
-                    <button type="button" class="btnexpo btn btn-dark">
-                        Limpiar filtros
-                    </button>
-                </div>
-                <div class="borde me-3">
-                    <button type="button" class="btnexpo btn btn-dark">
-                        Explorar todos los géneros
-                    </button>
-                </div>
-                <div class="borde me-3">
-                    <button type="button" class="btnexpo btn btn-dark">
-                        Explorar todos los autores
-                    </button>
-                </div>
-            </div>
-            <h1>Catálogo</h1>
-            <p>Filtrar por:</p>
-            <div class="botones mb-3">
-                <div class="botones">
-                    <div class="dropdown me-3">
-                        <button class="btn btn-secondary dropdown-toggle drop-downs" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Autor
-                        </button>
-                        <ul id="listaAutor" class="dropdown-menu">
-                        </ul>
+        <div class="container">
+            <div class="elementos">
+                <figure>
+                    <img src="../Imagenes/perfil-default.png" alt="Autor" class="rounded-circle autor" id="usuarioImage"
+                        style="cursor: pointer;">
+                    <figcaption class="mt-2" id="captionText">Añade una foto tuya</figcaption>
+                </figure>
+                <input type="file" id="fileInput" onchange="onFileSelected(event)" />
+                <div class="contenido">
+                    <h2>Nombres:</h2>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Rosalino" aria-label="Username"
+                            aria-describedby="basic-addon1">
                     </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle drop-downs" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Género
-                        </button>
-                        <ul id="listaGenero" class="dropdown-menu">
-                        </ul>
+                    <h2>Apellidos:</h2>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Sánchez Félix" aria-label="Username"
+                            aria-describedby="basic-addon1">
                     </div>
+                    <h2>Correo:</h2>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="chalino@sanchez.com">
+                    </div>
+                    <h2>Contraseña:</h2>
+                    <div class="input-group">
+                        <input type="password" id="inputPassword5" class="form-control" placeholder="123abc"
+                            aria-describedby="passwordHelpBlock">
+                        <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                            Mostrar
+                        </button>
+                    </div>
+                    <h2>Edad:</h2>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Introduce tu edad" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <h2>Género:</h2>
+                    <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+                    <label class="btn" for="option5">Hombre</label>
+                    <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
+                    <label class="btn" for="option6">Mujer</label>
                 </div>
-            </div>
-            <div id="contenido" class="tabla">
             </div>
             <div class="divBtn mt-4">
-                <button type="button" id="btnMas" class="btn btn-lg btn-dark">Mostrar más</button>
+                <button type="button" class="btn btn-lg btn-danger me-3" data-bs-toggle="modal" data-bs-target="#modalCancelar">Cancelar</button>
+                <a href="../index.html" type="button" class="btn btn-lg btn-dark">Hecho</a>
+            </div>
+            <!-- Modal Cancelar -->
+            <div class="modal fade" id="modalCancelar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Cancelar</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ¿Estás seguro que quieres salir sin guardar el avance?
+                        </div>
+                        <div class="modal-footer" id="footerCancelar">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <a href="../index.html" type="button" class="btn btn-danger">Salir</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -165,51 +186,8 @@
         </footer>
     </div>
 
-    <!-- SideBar -->
-    <div class="sidebar fixed-top">
-        <img src="../Imagenes/Logo.png" alt="Logo" class="logo position-absolute top-0 start-50 translate-middle">
-        <div>
-            <a href="../index.html">
-                <h4><i class="bi bi-house-door"></i> Inicio</h4>
-            </a>
-            <a href="explorar.html">
-                <h4><i class="bi bi-bookmarks"></i> Explorar</h4>
-            </a>
-            <a href="catalogo.html">
-                <h4><i class="bi bi-book-fill"></i> Catálogo</h4>
-            </a>
-            <a href="coleccion.html">
-                <h4><i class="bi bi-star"></i> Colección</h4>
-            </a>
-            <a href="en-posesion.html">
-                <h4><i class="bi bi-journal-bookmark"></i> En posesión</h4>
-            </a>
-            <a href="administrar.html" class="admin">
-                <h4><i class="bi bi-pencil"></i> Administrar</h4>
-            </a>
-            <a href="" class="admin">
-                <h4><i class="bi bi-input-cursor"></i> Canjear código</h4>
-            </a>
-            <a href="" class="admin">
-                <h4><i class="bi bi-bar-chart"></i> Estadísticas</h4>
-            </a>
-        </div>
-        <div class="position-absolute bottom-0 start-0 ms-3 mb-4">
-            <a href="acerca.html">
-                <h6>Acerca de la biblioteca</h6>
-            </a>
-            <a href="#">
-                <h6>¿Cómo encontrar un libro?</h6>
-            </a>
-            <a href="#">
-                <h6>¿Cómo pedir un libro?</h6>
-            </a>
-        </div>
-    </div>
-
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Bytescale -->
+    <script src="https://js.bytescale.com/sdk/v3"></script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -217,7 +195,7 @@
     <!-- General -->
     <script src="../Scripts/General.js"></script>
     <!-- Script personalizado -->
-    <script src="../Scripts/catalogo.js"></script>
+    <script src="../Scripts/crear-editar-cuenta.js"></script>
 </body>
 
 </html>
