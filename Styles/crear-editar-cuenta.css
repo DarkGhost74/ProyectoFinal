@@ -6,16 +6,15 @@ nav {
     height: 60px;
 }
 
-.navbar-toggler, .profile-img {
+nav .d-flex {
+    visibility: hidden;
+}
+
+.navbar-toggler,
+.profile-img {
     display: none;
 }
 
 footer {
     margin-left: 0%;
-}
-
-@media (min-width: 992px) {
-    nav .d-flex {
-        visibility: hidden;
-    }
 }
