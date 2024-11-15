@@ -1,0 +1,16 @@
+body {
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    background-color: #ece7aa;
+}
+
+body div {
+    text-align: center;
+    font-size: x-large;
+}
+
+h1 {
+    color: red;
+    font-size: 70px;
+}
