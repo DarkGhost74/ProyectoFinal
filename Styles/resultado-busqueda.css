@@ -1,0 +1,71 @@
+.botones {
+    display: flex;
+}
+
+.btn-secondary {
+    background-color: #ece7aa;
+    color: black;
+    border: 2px solid black;
+}
+
+.borde {
+    padding: 3px;
+    border-radius: 10px;
+    background-image: linear-gradient(150deg, #9500ff, #09f, #00ddff);
+    display: inline-block;
+}
+
+.btnfiltros {
+    color: black;
+    background-color: #ece7aa;
+    border: none;
+    display: block;
+}
+
+.divBtn {
+    text-align: center;
+    width: 250px;
+    margin-left: calc((100% - 250px) / 2);
+}
+
+.btn-lg {
+    background-color: #ece7aa;
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+    border: 2px solid black;
+}
+
+/* xm - lg */
+@media (max-width: 1209px) {
+    #botones3 {
+        margin-left: 0px;
+    }
+    .tabla {
+        margin-top: 10px;
+    }
+}
+
+/* xl */
+@media (min-width: 1210px) {
+    #botones3 {
+        margin-right: calc((100% - 1210px) / 2);
+        right: 0px;
+        top: 80px;
+        position: absolute;
+    }
+}
+
+/* xxl */
+@media (min-width: 1390px) {
+    #botones3 {
+        margin-right: calc((100% - 1350px) / 2);
+    }
+}
+
+/* xxxl */
+@media (min-width: 1570px) {
+    #botones3 {
+        margin-right: calc((100% - 1570px) / 2);
+    }
+}
