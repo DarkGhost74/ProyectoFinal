@@ -1,0 +1,92 @@
+#graficoedades {
+    position: relative;
+    height: 250px;
+    width: 250px;
+}
+
+#graficopedidos, #graficogustadoslibros {
+    position: relative;
+    height: 250px;
+    width: 75%;
+}
+
+@media (max-width: 575px) {
+    #graficoedades, #graficopedidos, #graficogustadoslibros {
+        width: 100%;
+    }
+}
+
+.tarjeta {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.tabla-fija {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.tabla-fija th,
+.tabla-fija td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.tabla-fija th:first-child,
+.tabla-fija td:first-child {
+    width: 50px;
+}
+
+.tabla-fija thead th {
+    background-color: #ece7aa;
+    position: sticky;
+    border: 3px;
+    top: 0;
+    z-index: 1;
+}
+
+.tabla-contenedor::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 10px;
+}
+
+.tabla-contenedor::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid #f4f4f4;
+}
+
+.tabla-contenedor::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.tabla-contenedor::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}

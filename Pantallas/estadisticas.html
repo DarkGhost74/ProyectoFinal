@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de la biblioteca</title>
+    <title>Estadísticas</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,7 +14,7 @@
     <!-- NavBar, SideBar, COntenido, Footer -->
     <link rel="stylesheet" href="../Styles/General.css">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="../Styles/acerca.css">
+    <link rel="stylesheet" href="../Styles/estadisticas.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,7 +63,7 @@
                             <a class="nav-link" href=""><i class="bi bi-input-cursor"></i> Canjear código</a>
                         </li>
                         <li class="nav-item admin">
-                            <a class="nav-link" href="estadisticas.html"><i class="bi bi-bar-chart"></i> Estadísticas</a>
+                            <a class="nav-link active" href=""><i class="bi bi-bar-chart-fill"></i> Estadísticas</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -93,47 +93,111 @@
     <div id="principal">
         <!-- Contenido -->
         <div class="contenedor">
-            <section class="history-options">
-                <h1>Historia y Antecedentes</h1>
-                <p>La Biblioteca El Búho fue fundada en abril de 1985 en el corazón de Monterrey, Nuevo León, México. Su
-                    primer local, ubicado en el centro histórico de la ciudad, contaba con un espacio modesto de apenas 100
-                    m². A pesar de su tamaño reducido, El Búho rápidamente se destacó por su ambiente acogedor y su área de
-                    lectura con vistas al parque, un lugar que invitaba a los visitantes a disfrutar de la lectura en un
-                    entorno relajado. Desde sus inicios, la biblioteca organizaba charlas literarias, pequeños conciertos y
-                    talleres de escritura, lo que la convirtió en un punto de encuentro para amantes de la cultura.</p>
-                <img src="../Imagenes/Fotobiblo.jpeg" alt="Foto de la Biblioteca El Búho" class="biblioteca-img">
-                <p>Con el paso de los años, El Búho ha crecido y actualmente tiene presencia en varios municipios de Nuevo
-                    León. </p>
-                <p>El público de la Biblioteca El Búho es variado, compuesto por estudiantes, docentes, profesionales y
-                    familias que buscan un espacio donde aprender, compartir y encontrar entretenimiento cultural. Además,
-                    la biblioteca organiza eventos semanales como presentaciones de libros, círculos de lectura y
-                    cine-debates, convirtiéndose en un punto de referencia en la vida cultural de Monterrey.</p>
-                <p>La misión de El Búho es clara: seguir fomentando el amor por la lectura y la cultura en todos los
-                    rincones de la ciudad y más allá. Con planes de expansión hacia nuevas localidades y la incorporación de
-                    servicios digitales, El Búho continúa creciendo, contribuyendo al enriquecimiento cultural de la
-                    sociedad regiomontana.</p>
-            </section>
-            <section class="mission-vision-values">
-                <h1>Misión, Visión y Valores</h1>
-                <h3>Misión</h3>
-                <p>Fomentamos el amor por la lectura y el desarrollo cultural, creando espacios de encuentro para el
-                    conocimiento y el aprendizaje, contribuyendo activamente a la vida intelectual y artística de nuestra
-                    comunidad.</p>
-                <h3>Visión</h3>
-                <p>Ser la biblioteca de referencia en Monterrey y sus alrededores, un lugar donde la cultura, la educación y
-                    el entretenimiento se fusionen, impulsando la transformación positiva de las personas y la comunidad a
-                    través del conocimiento.</p>
-                <h3>Valores</h3>
-                <p><strong>Pasión por la cultura.</strong> Amamos los libros, el arte y todo lo que enriquece el
-                    conocimiento.</p>
-                <p><strong>Compromiso con la comunidad.</strong> Nos dedicamos a satisfacer las necesidades de nuestros
-                    usuarios, ofreciendo un ambiente de aprendizaje y crecimiento personal.</p>
-                <p><strong>Integridad.</strong> Actuamos con transparencia, honestidad y coherencia en todas nuestras
-                    acciones.</p>
-                <p><strong>Respeto.</strong> Valoramos la diversidad de ideas y tratamos a todos con dignidad.</p>
-                <p><strong>Innovación.</strong> Buscamos continuamente nuevas formas de conectar a las personas con la
-                    cultura y el conocimiento.</p>
-            </section>
+            <h1>Estadísticas</h1>
+            <div class="tarjeta mb-3">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">Usuarios</h3>
+                    <div class="row">
+                        <div class="column">
+                            <h6 class="mb-2">Cantidad de usuarios:</h6>
+                            <p class="ms-4">Administradores: #<br>Lectores: #</p>
+                            <h6 class="mb-2">Género:</h6>
+                            <p class="ms-4">Hombres: #<br>Mujeres: #</p>
+                            <h6 class="mb-2">Edad promedio: 30 años</h6>
+                            <div id="graficoedades"></div>
+                        </div>
+                        <div class="column">
+                            <div class="tabla-contenedor">
+                                <table class="tabla-fija">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Edad</th>
+                                            <th>Cantidad de usuarios</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tablaedades">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta mb-3">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">Libros más pedidos</h3>
+                    <div class="row">
+                        <div class="column">
+                            <div class="tabla-contenedor">
+                                <table class="tabla-fija">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Título</th>
+                                            <th>Género</th>
+                                            <th>Autor</th>
+                                            <th>Pedidos</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tablapedidos">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <h6 class="mb-2">Géneros:</h6>
+                            <div id="graficopedidos"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta mb-3">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">Libros más gustados</h3>
+                    <div class="row">
+                        <div class="column">
+                            <div class="tabla-contenedor">
+                                <table class="tabla-fija">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Título</th>
+                                            <th>Género</th>
+                                            <th>Autor</th>
+                                            <th>Likes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tablagustadoslibros">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <h6 class="mb-2">Géneros:</h6>
+                            <div id="graficogustadoslibros"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">Autores más gustados</h3>
+                    <div class="tabla-contenedor">
+                        <table class="tabla-fija">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Nombre</th>
+                                    <th>Likes</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablagustadosautores">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Footer -->
@@ -187,12 +251,12 @@
             <a href="" class="admin">
                 <h4><i class="bi bi-input-cursor"></i> Canjear código</h4>
             </a>
-            <a href="estadisticas.html" class="admin">
-                <h4><i class="bi bi-bar-chart"></i> Estadísticas</h4>
+            <a href="" class="admin">
+                <h4><i class="bi bi-bar-chart-fill"></i> Estadísticas</h4>
             </a>
         </div>
         <div class="position-absolute bottom-0 start-0 ms-3 mb-4">
-            <a href="#">
+            <a href="acerca.html">
                 <h6>Acerca de la biblioteca</h6>
             </a>
             <a href="#">
@@ -204,13 +268,19 @@
         </div>
     </div>
 
+    <!-- Apache Echarts -->
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!-- General -->
     <script src="../Scripts/General.js"></script>
+    <!-- Script personalizado -->
+    <script src="../Scripts/estadisticas.js"></script>
 </body>
 
 </html>
-   
