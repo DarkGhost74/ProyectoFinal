@@ -1,0 +1,19 @@
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#codigoInput {
+    text-align: center;
+}
+
+.btn-primary {
+    margin-top: 1rem;
+    width: 100px;
+    background-color: #5a9; /* Cambia el color si deseas */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #489;
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estadísticas</title>
+    <title>Explorar Autores</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,7 +14,7 @@
     <!-- NavBar, SideBar, COntenido, Footer -->
     <link rel="stylesheet" href="../Styles/General.css">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="../Styles/estadisticas.css">
+    <link rel="stylesheet" href="../Styles/explorar.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,8 @@
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
-                <img src="../Imagenes/Logo icono.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                <img src="../Imagenes/Logo icono.png" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
                 Biblioteca "El Búho"
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -42,10 +43,12 @@
                 <div class="colapsado">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html"><i class="bi bi-house-door"></i> Inicio</a>
+                            <a class="nav-link" aria-current="page" href="../index.html"><i
+                                    class="bi bi-house-door"></i> Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="explorar.html"><i class="bi bi-bookmarks"></i> Explorar</a>
+                            <a class="nav-link active" href="explorar.html"><i class="bi bi-bookmarks-fill"></i>
+                                Explorar</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="catalogo.html"><i class="bi bi-book"></i> Catálogo</a>
@@ -54,7 +57,8 @@
                             <a class="nav-link" href="coleccion.html"><i class="bi bi-star"></i> Colección</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="en-posesion.html"><i class="bi bi-journal-bookmark"></i> En posesión</a>
+                            <a class="nav-link" href="en-posesion.html"><i class="bi bi-journal-bookmark"></i> En
+                                posesión</a>
                         </li>
                         <li class="nav-item admin">
                             <a class="nav-link" href="administrar.html"><i class="bi bi-pencil"></i> Administrar</a>
@@ -63,10 +67,11 @@
                             <a class="nav-link" href=""><i class="bi bi-input-cursor"></i> Canjear código</a>
                         </li>
                         <li class="nav-item admin">
-                            <a class="nav-link active" href=""><i class="bi bi-bar-chart-fill"></i> Estadísticas</a>
+                            <a class="nav-link" href=""><i class="bi bi-bar-chart"></i> Estadísticas</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 <i class="bi bi-three-dots"></i> Más acciones
                             </a>
                             <ul class="dropdown-menu">
@@ -93,109 +98,117 @@
     <div id="principal">
         <!-- Contenido -->
         <div class="contenedor">
-            <h1>Estadísticas</h1>
-            <div class="tarjeta mb-3">
-                <div class="card-body">
-                    <h3 class="card-title mb-3">Usuarios</h3>
-                    <div class="row">
-                        <div class="column">
-                            <h6 class="mb-2">Cantidad de usuarios:</h6>
-                            <p class="ms-4">Administradores: #<br>Lectores: #</p>
-                            <h6 class="mb-2">Género:</h6>
-                            <p class="ms-4">Hombres: #<br>Mujeres: #</p>
-                            <h6 class="mb-2">Edad promedio: 30 años</h6>
-                            <div id="graficoedades"></div>
+            <div class="container mt-5">
+                <h2 class="text-center mb-4">Autores</h2>
+                <!-- Sección A -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-auto">
+                        <div class="card border-0">
+                            <a href="../Pantallas/vista-autor.html" class="card-link">
+                                <img src="../Imagenes/Prueba/Autores/Ana Frank.jpg" class="card-img-top rounded-circle" alt="Ana Frank">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Ana Frank</h5>
+                            </div>
                         </div>
-                        <div class="column">
-                            <div class="tabla-contenedor">
-                                <table class="tabla-fija">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Edad</th>
-                                            <th>Cantidad de usuarios</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tablaedades">
-                                    </tbody>
-                                </table>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card border-0">
+                            <a href="../Pantallas/vista-autor.html" class="card-link">
+                                <img src="../Imagenes/Prueba/Autores/Edgar Allan Poe.jpeg" class="card-img-top rounded-circle" alt="Edgar Allan Poe">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Edgar Allan Poe</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card border-0">
+                            <a href="../Pantallas/vista-autor.html" class="card-link">
+                                <img src="../Imagenes/Prueba/Autores/H. P. Lovecraft.jpg" class="card-img-top rounded-circle" alt="H. P. Lovecraft">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">H. P. Lovecraft</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card border-0">
+                            <a href="../Pantallas/vista-autor.html" class="card-link">
+                                <img src="../Imagenes/Prueba/Autores/J. K. Rowling.jpeg" class="card-img-top rounded-circle" alt="J. K. Rowling">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">J. K. Rowling</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card border-0">
+                            <a href="../Pantallas/vista-autor.html" class="card-link">
+                                <img src="../Imagenes/Prueba/Autores/J. R. R. Tolkien.png" class="card-img-top rounded-circle" alt="J. R. R. Tolkien">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">J. R. R. Tolkien</h5>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tarjeta mb-3">
-                <div class="card-body">
-                    <h3 class="card-title mb-3">Libros más pedidos</h3>
-                    <div class="row">
-                        <div class="column">
-                            <div class="tabla-contenedor">
-                                <table class="tabla-fija">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Título</th>
-                                            <th>Género</th>
-                                            <th>Autor</th>
-                                            <th>Pedidos</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tablapedidos">
-                                    </tbody>
-                                </table>
+                <div class="row justify-content-center mb-4">
+                    <div class="col-auto">
+                        <div class="card border-0">
+                            <a href="../Pantallas/vista-autor.html" class="card-link">
+                                <img src="../Imagenes/Prueba/Autores/Julio Verne.jpeg" class="card-img-top rounded-circle" alt="Julio Verne">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Julio Verne</h5>
                             </div>
                         </div>
-                        <div class="column">
-                            <h6 class="mb-2">Géneros:</h6>
-                            <div id="graficopedidos"></div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card border-0">
+                            <a href="../Pantallas/vista-autor.html" class="card-link">
+                                <img src="../Imagenes/Prueba/Autores/Lewis Carroll.jpeg" class="card-img-top rounded-circle" alt="Lewis Carroll">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Lewis Carroll</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card border-0">
+                            <a href="../Pantallas/vista-autor.html" class="card-link">
+                                <img src="../Imagenes/Prueba/Autores/Lucy Maud Montgomery.jpeg" class="card-img-top rounded-circle" alt="Lucy Maud Montgomery">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Lucy Maud Montgomery</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card border-0">
+                            <a href="../Pantallas/vista-autor.html" class="card-link">
+                                <img src="../Imagenes/Prueba/Autores/Sor Juana Ines de la Cruz.jpg" class="card-img-top rounded-circle" alt="Sor Juana Ines de la Cruz">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Sor Juana Ines de la Cruz</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card border-0">
+                            <a href="../Pantallas/vista-autor.html" class="card-link">
+                                <img src="../Imagenes/Prueba/Autores/Stephen King.jpg" class="card-img-top rounded-circle" alt="Stephen King">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Stephen King</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tarjeta mb-3">
-                <div class="card-body">
-                    <h3 class="card-title mb-3">Libros más gustados</h3>
-                    <div class="row">
-                        <div class="column">
-                            <div class="tabla-contenedor">
-                                <table class="tabla-fija">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Título</th>
-                                            <th>Género</th>
-                                            <th>Autor</th>
-                                            <th>Likes</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tablagustadoslibros">
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <h6 class="mb-2">Géneros:</h6>
-                            <div id="graficogustadoslibros"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tarjeta">
-                <div class="card-body">
-                    <h3 class="card-title mb-3">Autores más gustados</h3>
-                    <div class="tabla-contenedor">
-                        <table class="tabla-fija">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Nombre</th>
-                                    <th>Likes</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tablagustadosautores">
-                            </tbody>
-                        </table>
-                    </div>
+        
+                <!-- Botón "Mostrar más" -->
+                <div class="text-center">
+                    <button class="btn btn-primary">Mostrar más</button>
                 </div>
             </div>
         </div>
@@ -212,12 +225,14 @@
                         </div>
                         <div class="col">
                             <h5>Contacto</h5>
-                            <p>Correo electrónico: <small class="text-body-secondary">contacto@bibliotecaelbuho.com</small>
+                            <p>Correo electrónico: <small
+                                    class="text-body-secondary">contacto@bibliotecaelbuho.com</small>
                             </p>
                             <p>Telefono: <small class="text-body-secondary">8123456789</small></p>
                         </div>
                         <div class="col">
-                            <p>Página hecha con mucho esfuezo y dedicación, haciendo uso de todos los conocimientos que se
+                            <p>Página hecha con mucho esfuezo y dedicación, haciendo uso de todos los conocimientos que
+                                se
                                 han adquirido durante el semestre.</p>
                         </div>
                     </div>
@@ -234,7 +249,7 @@
                 <h4><i class="bi bi-house-door"></i> Inicio</h4>
             </a>
             <a href="explorar.html">
-                <h4><i class="bi bi-bookmarks"></i> Explorar</h4>
+                <h4><i class="bi bi-bookmarks-fill"></i> Explorar</h4>
             </a>
             <a href="catalogo.html">
                 <h4><i class="bi bi-book"></i> Catálogo</h4>
@@ -252,7 +267,7 @@
                 <h4><i class="bi bi-input-cursor"></i> Canjear código</h4>
             </a>
             <a href="" class="admin">
-                <h4><i class="bi bi-bar-chart-fill"></i> Estadísticas</h4>
+                <h4><i class="bi bi-bar-chart"></i> Estadísticas</h4>
             </a>
         </div>
         <div class="position-absolute bottom-0 start-0 ms-3 mb-4">
@@ -268,8 +283,6 @@
         </div>
     </div>
 
-    <!-- Apache Echarts -->
-    <script src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -280,7 +293,7 @@
     <!-- General -->
     <script src="../Scripts/General.js"></script>
     <!-- Script personalizado -->
-    <script src="../Scripts/estadisticas.js"></script>
+    <script src="../Scripts/explorar.js"></script>
 </body>
 
 </html>
