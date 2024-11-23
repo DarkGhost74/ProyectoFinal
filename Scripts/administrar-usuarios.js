@@ -22,7 +22,7 @@ $(document).ready(function () {
                         </div>
                     </td>
                     <td><button type="button" class="btn btn-dark"><i class="bi bi-info-circle"></i> Info</button></td>
-                    <td><a type="button" class="btn btn-dark eliminar-btn" href="#" data-bs-toggle="modal" data-bs-target="#modalEliminar"><i class="bi bi-trash me-1"></i>Eliminar</a></td>
+                    <td><a type="button" class="btn btn-dark eliminar-btn" href="info-usuario.html" data-bs-toggle="modal" data-bs-target="#modalEliminar"><i class="bi bi-trash me-1"></i>Eliminar</a></td>
                 </tr>
             `;
         $("#contenido").append(objeto)
